@@ -1,18 +1,18 @@
 
 Install using Helm
 
-Add helm repo
+Add helm repo ->
 
 helm repo add grafana https://grafana.github.io/helm-charts
 
-Update helm repo
+Update helm repo ->
 
 helm repo update
 
-Install helm
+Install helm ->
 
 helm install grafana grafana/grafana
 
-Expose Grafana Service
+Expose Grafana Service ->
 
 kubectl expose service grafana — type=NodePort — target-port=3000 — name=grafana-ext
